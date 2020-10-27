@@ -1,0 +1,28 @@
+.progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 20px;
+  height: 8px;
+  overflow: hidden;
+  @apply shadow-light;
+}
+
+.progress-blue-400::-webkit-progress-value {
+  border-radius: 20px;
+  @apply bg-blue-400;
+}
+
+.progress-red-400::-webkit-progress-value {
+  border-radius: 20px;
+  @apply bg-red-400;
+}
+
+.progress-indigo-400::-webkit-progress-value {
+  border-radius: 20px;
+  @apply bg-indigo-400;
+  color: #c8d4ff27;
+}
+
+.progress-purple-400::-webkit-progress-value {
+  border-radius: 20px;
+  @apply bg-purple-400;
+}
