@@ -9,7 +9,7 @@ import { Label, Color } from 'ng2-charts';
 })
 export class DashboardComponent implements OnInit {
   today: Date;
-
+  header: string = 'Hi Jahseh, welcome back';
   value = 45;
 
   constructor() {
@@ -64,6 +64,7 @@ export class DashboardComponent implements OnInit {
       pointBackgroundColor: 'white',
       pointRadius: 5,
       pointBorderWidth: 2,
+      
     },
   ];
 
@@ -86,5 +87,13 @@ export class DashboardComponent implements OnInit {
     },
   ];
 
-  ngOnInit(): void {}
+  changeHeader() {
+    setTimeout(() => {
+      this.header = 'Overview';
+    }, 10000);
+  }
+
+  ngOnInit(): void {
+    this.changeHeader();
+  }
 }

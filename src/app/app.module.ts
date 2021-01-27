@@ -30,7 +30,7 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     HttpClientModule,
     AngularSvgIconModule.forRoot(),
     ChartsModule,
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

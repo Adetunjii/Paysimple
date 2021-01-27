@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { INavItem } from 'src/app/models/INavItem';
+import { AnalyticsService } from 'src/app/services/analytics.service';
 import { NavItems } from '../nav';
 
 @Component({
@@ -11,12 +12,13 @@ import { NavItems } from '../nav';
 export class SidebarComponent implements OnInit {
   navItems: INavItem[] = NavItems;
   hidden = true;
+  salesItems: any[];
+  message: any;
 
-  constructor(private router: Router) {}
-
-  log() {
-    console.log(this.router.url);
-  }
+  constructor(
+    private router: Router,
+    private analyticsService: AnalyticsService
+  ) {}
 
   toggle(index) {
     console.log(this.navItems[index]);
@@ -30,6 +32,10 @@ export class SidebarComponent implements OnInit {
       this.router.navigateByUrl(url);
     }
   }
-  Orders;
-  ngOnInit(): void {}
+
+  ngOnInit(): void {
+ 
+  }
+
+ 
 }

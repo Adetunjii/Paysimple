@@ -5,7 +5,7 @@ import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { ErrorComponent } from './views/error/error.component';
 import { PosComponent } from './views/pos/pos.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full' },
   { path: '', component: SidebarComponent },
   { path: 'main', component: DashboardComponent },
